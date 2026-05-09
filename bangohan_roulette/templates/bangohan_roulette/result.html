@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="flex flex-col items-center justify-center min-h-screen">
+  <h1 class="text-4xl font-bold mb-4">今日のばんごはん</h1>
+
+  <div class="card w-96 bg-base-100 shadow-xl">
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-3xl mb-6">{{ dish.name }}</h2>
+
+      <div class="divider">食材</div>
+
+      <ul class="w-full">
+        {% for ingredient in ingredients %}
+          <li class="py-2 text-lg border-b border-base-200">{{ ingredient.name }}</li>
+        {% endfor %}
+      </ul>
+
+      <div class="card-actions mt-6">
+        <a href="{% url 'bangohan_roulette:roulette' %}" class="btn btn-primary">
+          もう一度
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
