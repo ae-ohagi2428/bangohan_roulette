@@ -4,7 +4,9 @@ https://bangohan-roulette-web-fvxv.onrender.com/
 
 ### 2. アプリ紹介
 今日の晩ご飯をルーレットで決められます。
+
 RUNTEQで学習した内容をもとに、初めて制作したミニアプリです。
+
 「スタート」ボタンを押すと、晩ご飯のメニュー名と必要な食材が表示されます。
 
 <img src="app_image.png" alt="アプリ画像" width="60%">
